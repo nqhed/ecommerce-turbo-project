@@ -4,7 +4,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    '../../packages/ui/event/**/*.{ts,tsx}',
+    "../../packages/ui/storefront-web/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {},
