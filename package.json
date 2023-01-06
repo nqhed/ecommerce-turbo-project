@@ -4,14 +4,16 @@
   "private": true,
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "tests/*"
   ],
   "scripts": {
     "start": "turbo run start",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "sb:storefront": "turbo run storybook --filter=./tests/site-storefront-sb"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
