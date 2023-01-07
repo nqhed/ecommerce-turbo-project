@@ -1,21 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 const {
   container,
+  boxShadow,
   fontWeight,
   fontSize,
   screens,
-} = require("../../packages/ui/site-storefront/configs/tailwind-custom.config.js");
+} = require("../../packages/ui/configs/tailwind-custom.config.js");
 module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "../../packages/ui/site-storefront/**/*.{ts,tsx}",
+    "../../packages/ui/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
       fontWeight: fontWeight,
     },
     screens: screens,
+    boxShadow: boxShadow,
     container: container,
     fontSize: fontSize,
   },

@@ -1,7 +1,5 @@
 import { FC, useMemo, HTMLAttributes } from "react";
 
-const { prefix } = require("../../configs/tailwind-custom.config.js");
-
 export const HTML_TYPOGRAPHY_TAGS = [
   "h1",
   "h2",
@@ -162,7 +160,7 @@ const Typography: FC<TypographyProps> = ({
         className={
           isOnlyCustomClassName
             ? customClassName
-            : `text-${prefix}-${variant}${
+            : `text-yd-${variant}${
                 getDefaultFontWeight() + getCustomClassName()
               }`
         }

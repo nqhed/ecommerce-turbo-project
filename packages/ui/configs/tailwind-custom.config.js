@@ -1,15 +1,40 @@
 const prefix = "yd-"
 
+const screens = {
+  //sm: "640px",
+  // => @media (min-width: 640px) { ... }
+
+  md: "768px",
+  // => @media (min-width: 768px) { ... } Tablet
+
+  // lg: "1024px",
+  // => @media (min-width: 1024px) { ... }
+
+  xl: "1440px",
+  // => @media (min-width: 1280px) { ... }
+
+  // "2xl": "1600px",
+  // => @media (min-width: 1600px) { ... }
+};
+
 const container = {
   padding: {
-    DEFAULT: "1rem",
-    sm: "2rem",
-    lg: "4rem",
+    DEFAULT: "0.5rem",
+    sm: "0.5rem",
+    md: "0.875rem",
+    lg: "0.875rem",
     xl: "5.75rem",
   },
 };
 
-const colors = {
+const boxShadow = {
+  [`${prefix}depth-4`]: "0px 0.3px 0.9px rgba(0, 0, 0, 0.1), 0px 1.6px 3.6px rgba(0, 0, 0, 0.13)",
+  [`${prefix}depth-8`]: "0px 0.6px 1.8px rgba(0, 0, 0, 0.1), 0px 3.2px 7.2px rgba(0, 0, 0, 0.13)",
+  [`${prefix}depth-16`]: "0px 1.2px 3.6px rgba(0, 0, 0, 0.1), 0px 4px 14.4px rgba(0, 0, 0, 0.13)",
+  [`${prefix}depth-64`]: "0px 4.8px 14.4px rgba(0, 0, 0, 0.08), 0px 25.6px 57.6px rgba(0, 0, 0, 0.08)",
+}
+
+const colorPallets = {
   white: "rgba(255, 255, 255, 1)", // #ffffff
   black: "rgba(0, 0, 0, 1)", // #000000
   // --- Gray --------------
@@ -69,6 +94,12 @@ const colors = {
   [`${prefix}blue-18`]: "rgba(3, 0, 22, 1)", // #030016
 };
 
+const color = {
+  // -- Primary --
+  // -- Secondary --
+  // -- back
+}
+
 const fontWeight = {
   regular: 400,
 };
@@ -119,25 +150,9 @@ const fontSize = {
   [`${prefix}highlight-6`]: ["1.25rem", "1.75rem"],
 };
 
-const screens = {
-  //sm: "640px",
-  // => @media (min-width: 640px) { ... }
-
-  md: "768px",
-  // => @media (min-width: 768px) { ... } Tablet
-
-  lg: "1024px",
-  // => @media (min-width: 1024px) { ... }
-
-  xl: "1440px",
-  // => @media (min-width: 1280px) { ... }
-
-  // "2xl": "1600px",
-  // => @media (min-width: 1600px) { ... }
-};
-
 module.exports = {
   container,
+  boxShadow,
   fontWeight,
   fontSize,
   screens,

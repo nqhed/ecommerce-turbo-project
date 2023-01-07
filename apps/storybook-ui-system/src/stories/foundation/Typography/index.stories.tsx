@@ -3,10 +3,10 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Typography, {
   HTML_TYPOGRAPHY_TAGS,
   TYPOGRAPHY_VARIANTS,
-} from "ui/site-storefront/components/Typography";
+} from "ui/components/foundation/Typography";
 
 export default {
-  title: "Storefront/General/Typography",
+  title: "Yody UI System/Foundation/Typography",
   component: Typography,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
@@ -102,14 +102,15 @@ const Template: ComponentStory<any> = ({
       <div className="text-yd-highlight-4" />
       <div className="text-yd-highlight-5" />
       <div className="text-yd-highlight-6" />
-
-      <Typography
-        {...props}
-        variant={variant}
-        className={`${fontStyle}${className ? ` ${className}` : ""}`}
-      >
-        {content}
-      </Typography>
+      <div className="container mx-auto">
+        <Typography
+          {...props}
+          variant={variant}
+          className={`${fontStyle}${className ? ` ${className}` : ""}`}
+        >
+          {content}
+        </Typography>
+      </div>
     </>
   );
 };
