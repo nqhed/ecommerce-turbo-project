@@ -94,10 +94,71 @@ const colorPallets = {
   [`${prefix}blue-18`]: "rgba(3, 0, 22, 1)", // #030016
 };
 
+
 const color = {
   // -- Primary --
+  [`${prefix}primary`]: "rgba(252, 175, 23, 1)", // #FCAF17
+  [`${prefix}primary-sub`]: "rgba(252, 183, 46, 1)", // #FCB72E
+  [`${prefix}primary-hover`]: "rgba(253, 199, 93, 1)", // #FDC75D
+  [`${prefix}primary-pressed`]: "rgba(202, 140, 18, 1)", // #CA8C12
+  [`${prefix}primary-background`]: "rgba(255, 247, 232, 1)", // #FFF7E8
+  [`${prefix}primary-border`]: "rgba(254, 223, 162, 1)", // #FEDFA2
   // -- Secondary --
-  // -- back
+  [`${prefix}secondary`]: "rgba(42, 42, 134, 1)", // #2A2A86
+  [`${prefix}secondary-sub`]: "rgba(63, 63, 146, 1)", // #3F3F92
+  [`${prefix}secondary-hover`]: "rgba(106, 106, 170, 1)", // #6A6AAA
+  [`${prefix}secondary-pressed`]: "rgba(34, 34, 107, 1)", // #22226B
+  [`${prefix}secondary-background`]: "rgba(234, 234, 243, 1)", // #EAEAF3
+  [`${prefix}secondary-border`]: "rgba(170, 170, 207, 1)", // #AAAACF
+  // -- Background --
+  [`${prefix}grey-light-1`]: "rgba(249, 250, 251, 1)", // #F9FAFB
+  [`${prefix}grey-light-2`]: "rgba(242, 245, 248, 1)", // #F2F5F8
+  [`${prefix}grey-light-3`]: "rgba(230, 234, 240, 1)", // #E6EAF0
+  [`${prefix}hover`]: "rgba(249, 250, 251, 1)", // #F9FAFB
+  [`${prefix}pressed`]: "rgba(236, 239, 244, 1)", // #ECEFF4
+  [`${prefix}selected`]: "rgba(242, 245, 248, 1)", // #F2F5F8
+  [`${prefix}disabled`]: "rgba(236, 239, 244, 1)", // #ECEFF4
+  [`${prefix}black`]: "rgba(57, 73, 96, 1)", // #394960
+  // -- Typography --
+  [`${prefix}typo-disabled`]: "rgba(191, 202, 217, 1)", // #BFCAD9
+  [`${prefix}typo-placeholder`]: "rgba(159, 176, 199, 1)", // #9FB0C7
+  [`${prefix}typo-subtitle`]: "rgba(110, 135, 170, 1)", // #6E87AA
+  [`${prefix}typo-body`]: "rgba(75, 98, 129, 1)", // #4B6281
+  [`${prefix}typo-label`]: "rgba(57, 73, 96, 1)", // #394960
+  [`${prefix}typo-title`]: "rgba(28, 36, 48, 1)", // #1C2430
+  // -- Border and Line --
+  [`${prefix}line-divider`]: "", // 
+  [`${prefix}line-normal`]: "", // 
+  [`${prefix}line-hover`]: "", // 
+  [`${prefix}line-active`]: "", // 
+  // -- Alert Info --
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  // -- Alert Success --
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  // -- Alert Warning --
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  // -- Alert Error --
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
+  [`${prefix}`]: "", // 
 }
 
 const fontWeight = {
