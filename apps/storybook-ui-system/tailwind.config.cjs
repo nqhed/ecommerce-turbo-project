@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const {
   container,
+  colors,
   boxShadow,
   fontWeight,
   fontSize,
@@ -19,6 +20,7 @@ module.exports = {
     screens: screens,
     boxShadow: boxShadow,
     container: container,
+    colors: colors,
     fontSize: fontSize,
   },
   plugins: [],

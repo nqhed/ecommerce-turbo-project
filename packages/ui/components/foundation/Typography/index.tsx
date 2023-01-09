@@ -1,4 +1,4 @@
-import { FC, useMemo, HTMLAttributes } from "react";
+import { FC, useMemo, HTMLAttributes, ReactNode } from "react";
 
 export const HTML_TYPOGRAPHY_TAGS = [
   "h1",
@@ -120,6 +120,7 @@ export const DEFAULT_FONT_WEIGHT_CLASSNAMES: TypographyFontWeightClassName = {
 };
 
 export interface TypographyProps extends HTMLAttributes<HTMLElement> {
+  children?: ReactNode;
   htmlElementTag?: HTMLElementTypographyTag;
   isOnlyCustomClassName?: boolean;
   variant?: TypographyVariant;
