@@ -1,8 +1,8 @@
-import { FC, createContext, ReactNode, useContext } from "react";
+import { FC, createContext, ReactNode, useContext, HTMLAttributes } from "react";
 
 export const DEFAULT_ICON_SIZE = 16;
 
-export interface IconProps {
+export interface IconProps extends HTMLAttributes<HTMLElement> {
   size?: number;
   color?: string;
   // className:
@@ -31,7 +31,8 @@ export const IconProvider: FC<IconProviderProps> = ({ children, ...props }) => {
 export function useIconContext(newProps: IconProps) {
   const contextData = useContext<IconProps>(IconContext);
   const iconData: IconProps = {
-    size: newProps.size || contextData.size,
+    ...contextData,
+    ...newProps,
     // height: newProps.height || contextData.height,
     // width: newProps.width || contextData.width
   };
