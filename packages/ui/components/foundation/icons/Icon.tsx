@@ -5,9 +5,6 @@ export const DEFAULT_ICON_SIZE = 16;
 export interface IconProps extends HTMLAttributes<HTMLElement> {
   size?: number;
   color?: string;
-  // className:
-  // width?: number;
-  // height?: number;
 }
 
 export interface IconProviderProps extends IconProps {
@@ -16,8 +13,6 @@ export interface IconProviderProps extends IconProps {
 
 export const IconContext = createContext<IconProps>({
   size: DEFAULT_ICON_SIZE,
-  // height: DEFAULT_ICON_SIZE,
-  // width: DEFAULT_ICON_SIZE
 });
 
 export const IconProvider: FC<IconProviderProps> = ({ children, ...props }) => {
@@ -33,8 +28,6 @@ export function useIconContext(newProps: IconProps) {
   const iconData: IconProps = {
     ...contextData,
     ...newProps,
-    // height: newProps.height || contextData.height,
-    // width: newProps.width || contextData.width
   };
   return iconData;
 }

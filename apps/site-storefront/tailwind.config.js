@@ -4,14 +4,14 @@ const {
   fontWeight,
   fontSize,
   screens,
-} = require("ui/site-storefront/configs/tailwind-custom.config");
+} = require("ui/configs/tailwind-custom.config");
 module.exports = {
   mode: "jit",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "../../packages/ui/site-storefront/**/*.{ts,tsx}",
+    "../../packages/ui/component/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
